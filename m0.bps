@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="53" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_file/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="61" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_file/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="61" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_file/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="61" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_staged/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_staged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_staged/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_staged/act5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="60" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_notstaged/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="66" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_notstaged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="66" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_notstaged/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="66" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="modify_file_notstaged/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="66" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_untracked/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_untracked/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_untracked/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_notstaged/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_notstaged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="add_notstaged/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

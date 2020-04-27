@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poIdentifier name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.poIdentifier name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.poIdentifier name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.poIdentifier name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.poIdentifier name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.poIdentifier name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.poIdentifier name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/git/c0.bpo|org.eventb.core.poFile#c0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f2q∈F ⤖ Q" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="untracked∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="notstaged∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="staged∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="WDState={untracked,notstaged,staged}" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#4"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#5"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

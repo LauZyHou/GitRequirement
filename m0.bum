@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="WorkDirectory ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="StageField ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="Repository ≔ ∅" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="f2state ≔ ∅" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="f2oldq ≔ ∅" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="c0"/>
+<org.eventb.core.variable name=")" org.eventb.core.comment="工作区" org.eventb.core.identifier="WorkDirectory"/>
+<org.eventb.core.invariant name="*" org.eventb.core.comment="工作区里放的是磁盘文件" org.eventb.core.label="inv1" org.eventb.core.predicate="WorkDirectory ⊆ F"/>
+<org.eventb.core.variable name="+" org.eventb.core.comment="暂存区" org.eventb.core.identifier="StageField"/>
+<org.eventb.core.invariant name="," org.eventb.core.comment="暂存区里放的是快照" org.eventb.core.label="inv2" org.eventb.core.predicate="StageField ⊆ Q"/>
+<org.eventb.core.variable name="-" org.eventb.core.comment="Git仓库" org.eventb.core.identifier="Repository"/>
+<org.eventb.core.invariant name="." org.eventb.core.comment="Git仓库里放的是快照的集合" org.eventb.core.label="inv3" org.eventb.core.predicate="Repository ⊆ ℙ(Q)"/>
+<org.eventb.core.event name="/" org.eventb.core.comment="在工作区创建新文件" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="create_file">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="文件f原不属于工作区" org.eventb.core.label="grd1" org.eventb.core.predicate="f ∈ F ∖ WorkDirectory"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="WorkDirectory ≔ WorkDirectory ∪ {f}" org.eventb.core.comment="加入到工作区" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="f2state ≔ f2state ∪ {f ↦ untracked}" org.eventb.core.comment="新添加的文件是未跟踪的" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="f2oldq(f) ≔ f2q(f)" org.eventb.core.comment="维护到旧版本快照的映射" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="0" org.eventb.core.comment="文件-&gt;未跟踪/未暂存/已暂存 的映射" org.eventb.core.identifier="f2state"/>
+<org.eventb.core.invariant name="1" org.eventb.core.comment="工作区文件的状态，是一个全函数" org.eventb.core.label="inv4" org.eventb.core.predicate="f2state ∈ WorkDirectory → WDState"/>
+<org.eventb.core.event name="3" org.eventb.core.comment="在工作区修改文件(旧文件已暂存)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="modify_file_staged">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="f_old"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="f_new"/>
+<org.eventb.core.guard name=")" org.eventb.core.comment="旧文件是工作区里的" org.eventb.core.label="grd1" org.eventb.core.predicate="f_old ∈ WorkDirectory"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="新文件不属于工作区" org.eventb.core.label="grd2" org.eventb.core.predicate="f_new ∈ F ∖ WorkDirectory"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="WorkDirectory ≔ (WorkDirectory ∖ {f_old}) ∪ {f_new}" org.eventb.core.comment="以新换旧" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="f2state ≔ ({f_old} ⩤ f2state) ∪ {f_new ↦ notstaged}" org.eventb.core.comment="调整文件状态映射" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="f2oldq ≔ ({f_old} ⩤ f2oldq) ∪ {f_new ↦ f2q(f_old)}" org.eventb.core.comment="记录到旧文件快照的映射" org.eventb.core.label="act5"/>
+<org.eventb.core.guard name="0" org.eventb.core.comment="旧文件已暂存" org.eventb.core.label="grd3" org.eventb.core.predicate="f2state(f_old) = staged"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.comment="在工作区修改文件(旧文件已跟踪但未暂存)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="modify_file_notstaged">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="f_old"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="f_new"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="f_old ∈ WorkDirectory"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="f_new ∈ F ∖ WorkDirectory"/>
+<org.eventb.core.guard name="+" org.eventb.core.comment="旧文件已跟踪但未暂存" org.eventb.core.label="grd3" org.eventb.core.predicate="f2state(f_old) = notstaged"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="WorkDirectory ≔ (WorkDirectory ∖ {f_old}) ∪ {f_new}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="f2state ≔ ({f_old} ⩤ f2state) ∪ {f_new ↦ notstaged}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="f2oldq ≔ ({f_old} ⩤ f2oldq) ∪ {f_new ↦ f2oldq(f_old)}" org.eventb.core.comment="注意这里是f2olfq" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="2" org.eventb.core.comment="从工作区添加到暂存区(文件未跟踪)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add_untracked">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="必须是工作区的文件" org.eventb.core.label="grd1" org.eventb.core.predicate="f ∈ WorkDirectory"/>
+<org.eventb.core.guard name=")" org.eventb.core.comment="且是新添加的未被跟踪的文件" org.eventb.core.label="grd2" org.eventb.core.predicate="f2state(f) = untracked"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="StageField ≔ StageField ∪ {f2q(f)}" org.eventb.core.comment="将文件快照添加到暂存区" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="f2state ≔ f2state  {f ↦ staged} " org.eventb.core.comment="关系覆盖，将文件设为已添加到暂存" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.comment="从工作区添到暂存区(文件已跟踪但未暂存)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="add_notstaged">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="f ∈ WorkDirectory"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="f2state(f) = notstaged"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="StageField ≔ (StageField ∖ {f2oldq(f)}) ∪ {f2q(f)}" org.eventb.core.comment="旧快照换成新快照" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="f2state ≔ f2state  {f ↦ staged} " org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="5" org.eventb.core.comment="从工作区文件到其旧版本的快照的映射，即f2oldq(f_new)=f2q(f_old)" org.eventb.core.identifier="f2oldq"/>
+<org.eventb.core.invariant name="6" org.eventb.core.comment="文件到其旧版本快照的映射" org.eventb.core.label="inv5" org.eventb.core.predicate="f2oldq ∈ WorkDirectory → Q"/>
+</org.eventb.core.machineFile>
