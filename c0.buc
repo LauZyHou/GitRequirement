@@ -13,4 +13,7 @@
 <org.eventb.core.axiom name="3" org.eventb.core.label="axm4" org.eventb.core.predicate="staged ∈ WDState"/>
 <org.eventb.core.axiom name="4" org.eventb.core.label="axm5" org.eventb.core.predicate="WDState = {untracked,notstaged,staged}"/>
 <org.eventb.core.axiom name="5" org.eventb.core.label="axm6" org.eventb.core.predicate="untracked ≠ notstaged ∧ notstaged ≠ staged ∧ staged ≠ untracked"/>
+<org.eventb.core.carrierSet name="6" org.eventb.core.comment="所有合法分支名称" org.eventb.core.identifier="BranchName"/>
+<org.eventb.core.constant name="7" org.eventb.core.comment="在无分支时使用这个名称" org.eventb.core.identifier="noname"/>
+<org.eventb.core.axiom name="8" org.eventb.core.comment="这个也属于BranchName，但是不属于任何分支的AllBranch" org.eventb.core.label="axm7" org.eventb.core.predicate="noname ∈ BranchName"/>
 </org.eventb.core.contextFile>

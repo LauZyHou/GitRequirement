@@ -1727,117 +1727,163 @@
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="add_notstaged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="F,Q,WDState">
+<org.eventb.core.prProof name="add_notstaged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16" org.eventb.core.prSets="BranchName,F,Q,WDState">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17,p18,p19"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p18"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p9,p7,p1,p2,p5,p3,p4,p10,p11,p12">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13,p14,p11,p5,p10,p3,p4,p15,p1,p12,p16,p2,p8,p6,p7,p17,p18,p19">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 <org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="f" org.eventb.core.type="F"/>
 <org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f∈dom(f2state)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="f2state{f ↦ staged}∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="staged∈WDState"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="StageField⊆Q">
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="AllBranch⊆BranchName"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="f∈WorkDirectory"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="WorkDirectory⊆F"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="Repository⊆ℙ(Q)">
-<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="f∈dom(f2state)"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="notstaged∈WDState"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬untracked=notstaged"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f2state(f)=notstaged"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state(f)=notstaged"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="modify_file_staged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="F,Q,WDState">
+<org.eventb.core.prProof name="modify_file_staged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17" org.eventb.core.prSets="BranchName,F,Q,WDState">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19,p20"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p18"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7,p8,p6,p2,p9,p10,p1,p3,p4,p11,p12,p13">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13,p14,p11,p6,p10,p2,p3,p15,p1,p12,p16,p4,p17,p5,p7,p8,p18,p19,p20">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 <org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
 <org.eventb.core.prIdent name="f_new" org.eventb.core.type="F"/>
 <org.eventb.core.prIdent name="f_old" org.eventb.core.type="F"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="staged∈WDState"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ notstaged}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="f_old∈WorkDirectory"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f_old∈dom(f2state)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="StageField⊆Q">
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ notstaged}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="WorkDirectory⊆F"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f_old∈WorkDirectory"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="f2state(f_old)=staged"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Repository⊆ℙ(Q)">
-<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="notstaged∈WDState"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬untracked=notstaged"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="f_old∈dom(f2state)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f2state(f_old)=staged"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="modify_file_staged/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="F,Q,WDState">
 <org.eventb.core.lang name="L"/>
@@ -2248,22 +2294,25 @@
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="modify_file_notstaged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="F,Q,WDState">
+<org.eventb.core.prProof name="modify_file_notstaged/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17" org.eventb.core.prSets="BranchName,F,Q,WDState">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18,p19,p20"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p18"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p29"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with f2state(f_old)=notstaged" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p20" org.eventb.core.prHyps="p7,p8,p6,p1,p9,p10,p2,p3,p4,p11,p12,p13">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="p13,p14,p11,p6,p10,p3,p4,p15,p1,p12,p16,p5,p17,p2,p7,p8,p18,p19,p20">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -2272,103 +2321,146 @@
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 <org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
 <org.eventb.core.prIdent name="f_new" org.eventb.core.type="F"/>
 <org.eventb.core.prIdent name="f_old" org.eventb.core.type="F"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="staged∈WDState"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ notstaged}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f_old∈WorkDirectory"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f_old∈dom(f2state)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ f2state(f_old)}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="StageField⊆Q">
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ notstaged}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="AllBranch⊆BranchName"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="f2state(f_old)=notstaged"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="WorkDirectory⊆F"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f_old∈WorkDirectory"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="Repository⊆ℙ(Q)">
-<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="notstaged∈WDState"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬untracked=notstaged"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="f_old∈dom(f2state)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ f2state(f_old)}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
 <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="modify_file_notstaged/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="F,Q,WDState">
+<org.eventb.core.prProof name="modify_file_notstaged/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19" org.eventb.core.prSets="BranchName,F,Q,WDState">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14,p15"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20,p21,p22"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p18"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p20"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p21"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p9,p6,p1,p10,p12,p2,p3,p4,p7,p11,p13,p14,p15">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p30"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p31"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p15,p16,p12,p7,p11,p3,p4,p17,p1,p13,p18,p5,p19,p2,p8,p9,p14,p6,p20,p21,p22">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 <org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
 <org.eventb.core.prIdent name="f_new" org.eventb.core.type="F"/>
 <org.eventb.core.prIdent name="f_old" org.eventb.core.type="F"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f_old∈WorkDirectory"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f_old∈dom(f2state)"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f_old∈dom(f2oldq)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="({f_old} ⩤ f2oldq)∪{f_new ↦ f2oldq(f_old)}∈(WorkDirectory ∖ {f_old})∪{f_new} → Q"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="staged∈WDState"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="StageField⊆Q">
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="AllBranch⊆BranchName"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="f2state(f_old)=notstaged"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="WorkDirectory⊆F"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f_old∈WorkDirectory"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="f2oldq∈F ⇸ Q"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Repository⊆ℙ(Q)">
-<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="notstaged∈WDState"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬untracked=notstaged"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="f_old∈dom(f2state)"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f_old∈dom(f2oldq)"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2oldq∈F ⇸ Q"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f2state∈F ⇸ WDState"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="modify_file_notstaged/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="F,Q">
 <org.eventb.core.lang name="L"/>
@@ -2383,9 +2475,12 @@
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p10"/>
 <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p11"/>
 <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p15"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
-<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p1">
 <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
 <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
 </org.eventb.core.prAnte>
@@ -2393,8 +2488,8 @@
 <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
-<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p14">
-<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p17">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p1"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -2408,24 +2503,35 @@
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="StageField⊆Q">
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="AllBranch⊆BranchName">
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="f_old∈dom(f2oldq)∧f2oldq∈F ⇸ Q"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="untracked∈WDState">
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="WorkDirectory⊆F"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="f_old∈WorkDirectory"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="f2oldq∈F ⇸ Q"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="f2oldq∈F ⇸ Q"/>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬staged=untracked">
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="Repository⊆ℙ(Q)">
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Repository⊆ℙ(Q)">
 <org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬notstaged=staged">
@@ -2448,14 +2554,14 @@
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f_old∈dom(f2oldq)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="f_old∈dom(f2oldq)"/>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="WorkDirectory"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
 <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
-<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -2481,13 +2587,13 @@
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ))⊆ℕ"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{0}⊆ℕ"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
@@ -2504,8 +2610,8 @@
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ"/>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ1"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
@@ -2527,15 +2633,16 @@
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="F,Q,WDState">
 <org.eventb.core.lang name="L"/>
-<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p9"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p3,p4,p5,p6">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p2,p3,p4,p5,p6">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -2547,15 +2654,20 @@
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{0 ↦ (∅ ⦂ ℙ(Q))}∈0 ‥ 1 − 1 ↠ {∅ ⦂ ℙ(Q)}"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬untracked=notstaged"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{0 ↦ (∅ ⦂ ℙ(Q))}∈{0} ↠ {∅ ⦂ ℙ(Q)}"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="untracked∈WDState"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="{0 ↦ (∅ ⦂ ℙ(Q))}∈0 ‥ 0 ↠ {∅ ⦂ ℙ(Q)}"/>
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
@@ -2618,124 +2730,190 @@
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="commit/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="F,Q,WDState">
+<org.eventb.core.prProof name="commit/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="F,Q,WDState">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p18"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p20"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p10,p7,p2,p1,p6,p4,p8,p11,p12,p13,p14">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p3,p8">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="CommitIdSet" org.eventb.core.type="ℙ(ℤ)"/>
-<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
-<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
 <org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
-<org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
-<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
-<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="CommitIdSet⊆ℕ"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="staged∈WDState"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="StageField⊆Q"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="StageField≠(∅ ⦂ ℙ(Q))"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="c2repo∈CommitIdSet ↠ Repository"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="commitId∈ℕ"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state[WorkDirectory]∩{untracked,notstaged}=(∅ ⦂ ℙ(WDState))"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="WorkDirectory⊆F"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="notstaged∈WDState"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬untracked=notstaged"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬StageField=(∅ ⦂ ℙ(Q))"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="commitId+1∈ℕ"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="staged∈WDState">
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="StageField⊆Q"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="AllBranch⊆BranchName">
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="commitId+1∈ℕ1"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="StageField≠(∅ ⦂ ℙ(Q))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="f2state[WorkDirectory]∩{untracked,notstaged}=(∅ ⦂ ℙ(WDState))"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Repository⊆ℙ(Q)">
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬StageField=(∅ ⦂ ℙ(Q))"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="commit/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="F,Q,WDState">
+<org.eventb.core.prProof name="commit/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Q" org.eventb.core.psManual="true">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14"/>
-<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
-<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
-<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
-<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p19"/>
-<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p20"/>
-<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p21"/>
-<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p22"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p9,p10,p8,p2,p1,p6,p4,p7,p12,p13,p14,p15,p16">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p18,p19,p20,p21,p1,p4,p5,p6"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Z3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="Z3"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
-<org.eventb.core.prIdent name="CommitIdSet" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 <org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
-<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
 <org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="staged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="StageField⊆Q"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="AllBranch⊆BranchName">
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="StageField≠(∅ ⦂ ℙ(Q))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="untracked∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="WorkDirectory⊆F">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
-<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
-<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="notstaged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
-<org.eventb.core.prPred name="p1" org.eventb.core.predicate="CommitIdSet⊆ℕ"/>
-<org.eventb.core.prPred name="p19" org.eventb.core.predicate="staged∈WDState"/>
-<org.eventb.core.prPred name="p21" org.eventb.core.predicate="StageField⊆Q"/>
-<org.eventb.core.prPred name="p3" org.eventb.core.predicate="StageField≠(∅ ⦂ ℙ(Q))"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="c2repo{commitId ↦ StageField}∈CommitIdSet∪{commitId} ↠ Repository∪{StageField}"/>
-<org.eventb.core.prPred name="p4" org.eventb.core.predicate="c2repo∈CommitIdSet ↠ Repository"/>
-<org.eventb.core.prPred name="p6" org.eventb.core.predicate="commitId∈ℕ"/>
-<org.eventb.core.prPred name="p17" org.eventb.core.predicate="untracked∈WDState"/>
-<org.eventb.core.prPred name="p7" org.eventb.core.predicate="f2state[WorkDirectory]∩{untracked,notstaged}=(∅ ⦂ ℙ(WDState))"/>
-<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬commitId∈CommitIdSet"/>
-<org.eventb.core.prPred name="p20" org.eventb.core.predicate="WorkDirectory⊆F"/>
-<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬staged=untracked"/>
-<org.eventb.core.prPred name="p2" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
-<org.eventb.core.prPred name="p22" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬notstaged=staged"/>
-<org.eventb.core.prPred name="p18" org.eventb.core.predicate="notstaged∈WDState"/>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬untracked=notstaged"/>
-<org.eventb.core.prPred name="p5" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
-<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬StageField=(∅ ⦂ ℙ(Q))"/>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="commitId∉CommitIdSet"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="c2repo{commitId ↦ StageField}∈0 ‥ commitId+1 − 1 ↠ Repository∪{StageField}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬StageField=(∅ ⦂ ℙ(Q))"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="f2state∈WorkDirectory → WDState">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="f2q∈F ⤖ Q">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="WDState={untracked,notstaged,staged}">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="commit/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -2751,6 +2929,9 @@
 <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
 <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p12"/>
 <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p16"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -2761,9 +2942,17 @@
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p12" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="StageField⊆Q">
 <org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="AllBranch⊆BranchName">
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="StageField≠(∅ ⦂ ℙ(Q))">
 <org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
@@ -2773,8 +2962,12 @@
 <org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬commitId∈CommitIdSet"/>
-<org.eventb.core.prPred name="p11" org.eventb.core.predicate="WorkDirectory⊆F">
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="WorkDirectory⊆F">
 <org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
 </org.eventb.core.prPred>
@@ -2783,7 +2976,7 @@
 <org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
 <org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p13" org.eventb.core.predicate="Repository⊆ℙ(Q)">
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="Repository⊆ℙ(Q)">
 <org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
 </org.eventb.core.prPred>
@@ -2913,5 +3106,1131 @@
 <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(ℤ)))⊆ℙ(ℕ)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="BranchName">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="noname∈(∅ ⦂ ℙ(BranchName))∪{noname}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{0}⊆ℕ"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv15/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈{0}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv16/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="BranchName">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(BranchName×ℤ))∈(∅ ⦂ ℙ(BranchName)) → {0}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="BranchName">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b∈(AllBranch∪{b})∪{noname}"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv16/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="BranchName,F,Q,WDState">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14,p15,p16"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p11,p8,p5,p7,p3,p4,p12,p1,p9,p13,p2,p14,p15,p16">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∈BranchName ∖ (AllBranch∪{noname})"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b2head∪{b ↦ head}∈AllBranch∪{b} → AllHead∪{0}"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="BranchName,F,Q,WDState">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14,p15,p16"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="p10,p11,p8,p5,p7,p3,p4,p12,p1,p9,p13,p2,p14,p15,p16">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∈BranchName ∖ (AllBranch∪{noname})"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{0 ↦ (∅ ⦂ ℙ(Q))}∈0 ‥ 1 − 1 ↠ {∅ ⦂ ℙ(Q)}"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="{0 ↦ (∅ ⦂ ℙ(Q))}∈0 ‥ 0 ↠ {∅ ⦂ ℙ(Q)}"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ))⊆ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="BranchName,F,Q,WDState">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17,p18"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12,p13,p10,p8,p1,p4,p3,p5,p7,p14,p2,p11,p15,p6,p16,p17,p18">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="CommitIdSet" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2c" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="{0 ↦ 0}∈{0} → {0}"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="b∈BranchName ∖ (AllBranch∪{noname})"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="CommitIdSet⊆ℕ"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈CommitIdSet ↠ Repository"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="commitId∈ℕ"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="c2c∈CommitIdSet → CommitIdSet"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv15/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈AllHead∪{0}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p12"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="staged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="AllBranch⊆BranchName">
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="untracked∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="WorkDirectory⊆F">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="Repository⊆ℙ(Q)">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="notstaged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="AllHead∪{0}⊆ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_branch/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ1"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="switch_branch/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15" org.eventb.core.prSets="BranchName,F,Q,WDState">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17,p18"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p24"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="p12,p13,p8,p5,p7,p3,p4,p14,p1,p9,p15,p2,p16,p17,p18,p19,p20">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p31">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∈AllBranch"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="c2repo∈ℤ ⇸ ℙ(Q)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="commitId − 1∈dom(c2repo)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬notstaged∈f2state[WorkDirectory]"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="commitId − 1∈dom(c2repo)∧c2repo∈ℤ ⇸ ℙ(Q)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬b=branch"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="f2state[WorkDirectory]∩{notstaged}=(∅ ⦂ ℙ(WDState))"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="b≠branch"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="switch_branch/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18" org.eventb.core.prSets="BranchName,F,Q,WDState">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19,p20,p21"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p25"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p26"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p27"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p28"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p30"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p31"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p32"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p33"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p15,p16,p11,p6,p9,p4,p5,p17,p1,p12,p18,p3,p10,p7,p19,p20,p21,p22,p23,p24">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllCIS" org.eventb.core.type="ℙ(ℙ(ℤ))"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="f2oldq" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2q" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="head" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="AllHead⊆ℕ"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="noname∈BranchName"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="StageField ∖ c2repo(commitId − 1)=(∅ ⦂ ℙ(Q))"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="untracked∈WDState"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="b∈AllBranch"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="c2repo∈0 ‥ commitId − 1 ↠ Repository"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬staged=untracked"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="f2oldq∈WorkDirectory → Q"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="notstaged∈WDState"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="c2repo∈ℤ ⇸ ℙ(Q)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="commitId∈ℕ1"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="commitId − 1∈dom(c2repo)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="f2state∈WorkDirectory → WDState"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="f2q∈F ⤖ Q"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬notstaged∈f2state[WorkDirectory]"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="StageField⊆c2repo(commitId − 1)"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="staged∈WDState"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="StageField⊆Q"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬b=branch"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="WorkDirectory⊆F"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="AllCIS⊆ℙ(ℕ)"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="Repository⊆ℙ(Q)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬notstaged=staged"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b∈AllBranch∪{noname}"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬untracked=notstaged"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="head∈AllHead"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="f2state[WorkDirectory]∩{notstaged}=(∅ ⦂ ℙ(WDState))"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="b≠branch"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="WDState={untracked,notstaged,staged}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="branch∈AllBranch∪{noname}"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="switch_branch/inv15/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="BranchName">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for b2head(b)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional image goal for b2head(b)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p24">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="commitId − 1∉dom(c2repo)∨StageField ∖ c2repo(commitId − 1)=(∅ ⦂ ℙ(Q))">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="untracked∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="notstaged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬commitId − 1∈dom(c2repo)∨(commitId − 1∈dom(c2repo)∧c2repo∈ℤ ⇸ ℙ(Q))">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬notstaged∈f2state[WorkDirectory]">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="staged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b2head(b)∈AllHead"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬b=branch">
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="b2head(b)∈ℤ"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="WorkDirectory⊆F">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Repository⊆ℙ(Q)">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬commitId − 1∈dom(c2repo)∨StageField⊆c2repo(commitId − 1)">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="b2head∈BranchName ⇸ ℤ"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="b≠branch">
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f2state[WorkDirectory]∩{notstaged}=(∅ ⦂ ℙ(WDState))">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="commitId − 1∉dom(c2repo)∨(commitId − 1∈dom(c2repo)∧c2repo∈ℤ ⇸ ℙ(Q))">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.funImgGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="switch_branch/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="BranchName">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prHypAction name="HIDE7" org.eventb.core.prHyps="p22"/>
+<org.eventb.core.prHypAction name="HIDE8" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p25">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="AllBranch" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.prIdent name="AllHead" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.prIdent name="b2head" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="noname∈BranchName">
+<org.eventb.core.prIdent name="noname" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="commitId − 1∉dom(c2repo)∨StageField ∖ c2repo(commitId − 1)=(∅ ⦂ ℙ(Q))">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="untracked∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="b∈dom(b2head)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="b∈AllBranch"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬staged=untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="notstaged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬commitId − 1∈dom(c2repo)∨(commitId − 1∈dom(c2repo)∧c2repo∈ℤ ⇸ ℙ(Q))">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="b2head∈AllBranch → AllHead"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬notstaged∈f2state[WorkDirectory]">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="staged∈WDState">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="StageField⊆Q">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="AllBranch⊆BranchName"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b∈dom(b2head)∧b2head∈BranchName ⇸ ℤ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬b=branch">
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="AllRepo⊆ℙ(ℙ(Q))">
+<org.eventb.core.prIdent name="AllRepo" org.eventb.core.type="ℙ(ℙ(ℙ(Q)))"/>
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="WorkDirectory⊆F">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="Repository⊆ℙ(Q)">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="Repository" org.eventb.core.type="ℙ(ℙ(Q))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬notstaged=staged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="staged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬commitId − 1∈dom(c2repo)∨StageField⊆c2repo(commitId − 1)">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="StageField" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬untracked=notstaged">
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+<org.eventb.core.prIdent name="untracked" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="b2head∈BranchName ⇸ ℤ"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="b≠branch">
+<org.eventb.core.prIdent name="branch" org.eventb.core.type="BranchName"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="f2state[WorkDirectory]∩{notstaged}=(∅ ⦂ ℙ(WDState))">
+<org.eventb.core.prIdent name="F" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="WDState" org.eventb.core.type="ℙ(WDState)"/>
+<org.eventb.core.prIdent name="WorkDirectory" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.prIdent name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
+<org.eventb.core.prIdent name="notstaged" org.eventb.core.type="WDState"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="commitId − 1∉dom(c2repo)∨(commitId − 1∈dom(c2repo)∧c2repo∈ℤ ⇸ ℙ(Q))">
+<org.eventb.core.prIdent name="Q" org.eventb.core.type="ℙ(Q)"/>
+<org.eventb.core.prIdent name="c2repo" org.eventb.core.type="ℙ(ℤ×ℙ(Q))"/>
+<org.eventb.core.prIdent name="commitId" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="AllBranch"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>
