@@ -15,6 +15,8 @@
 <org.eventb.core.action name="4" org.eventb.core.assignment="AllHead ≔ {0}" org.eventb.core.label="act14"/>
 <org.eventb.core.action name="5" org.eventb.core.assignment="head ≔ 0" org.eventb.core.label="act15"/>
 <org.eventb.core.action name="6" org.eventb.core.assignment="b2head ≔ ∅" org.eventb.core.label="act16"/>
+<org.eventb.core.action name="7" org.eventb.core.assignment="b2commitId ≔ ∅" org.eventb.core.label="act17"/>
+<org.eventb.core.action name="8" org.eventb.core.assignment="b2c2repo ≔ ∅" org.eventb.core.label="act18"/>
 </org.eventb.core.event>
 <org.eventb.core.seesContext name="(" org.eventb.core.target="c0"/>
 <org.eventb.core.variable name=")" org.eventb.core.comment="工作区" org.eventb.core.identifier="WorkDirectory"/>
@@ -105,6 +107,8 @@
 <org.eventb.core.action name="0" org.eventb.core.assignment="AllHead ≔ AllHead ∪ {0}" org.eventb.core.comment="所有分支的head指针集合里记录这个head" org.eventb.core.label="act8"/>
 <org.eventb.core.action name="/" org.eventb.core.assignment="b2head ≔ b2head ∪ {b ↦ head}" org.eventb.core.comment="维护从branch到head的映射" org.eventb.core.label="act7"/>
 <org.eventb.core.action name="1" org.eventb.core.assignment="commitId ≔ 1" org.eventb.core.comment="提交id重置为1" org.eventb.core.label="act9"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="b2commitId ≔ b2commitId  {b ↦ 1}" org.eventb.core.comment="添加从branch到当前cid的映射" org.eventb.core.label="act10"/>
+<org.eventb.core.action name="3" org.eventb.core.assignment="b2c2repo ≔ b2c2repo  {b ↦ {0↦∅}}" org.eventb.core.label="act11"/>
 </org.eventb.core.event>
 <org.eventb.core.event name="Q" org.eventb.core.comment="切换到一个已有分支" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="switch_branch">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="b"/>
@@ -114,5 +118,13 @@
 <org.eventb.core.guard name="+" org.eventb.core.comment="暂存区没有未commit的文件" org.eventb.core.label="grd4" org.eventb.core.predicate="StageField ∖ c2repo(commitId−1) = ∅"/>
 <org.eventb.core.action name="," org.eventb.core.assignment="branch ≔ b" org.eventb.core.comment="当前分支改成b" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="-" org.eventb.core.assignment="head ≔ b2head(b)" org.eventb.core.comment="取出这个分支的head指针" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="commitId ≔ b2commitId(b)" org.eventb.core.comment="取出该分支当前所在的提交id" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="Repository ≔ ran(b2c2repo(b))" org.eventb.core.comment="直接取该分支c2repo的值域就是Repository" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="c2repo ≔ b2c2repo(b)" org.eventb.core.comment="取出映射关系" org.eventb.core.label="act4"/>
+<org.eventb.core.guard name="2" org.eventb.core.comment="确保该分支c2repo的定义域" org.eventb.core.label="grd5" org.eventb.core.predicate="dom(b2c2repo(b)) = 0‥b2commitId(b)−1"/>
 </org.eventb.core.event>
+<org.eventb.core.variable name="R" org.eventb.core.comment="从分支名到commitId的全函数" org.eventb.core.identifier="b2commitId"/>
+<org.eventb.core.invariant name="S" org.eventb.core.label="inv17" org.eventb.core.predicate="b2commitId ∈ AllBranch → ℕ1"/>
+<org.eventb.core.variable name="T" org.eventb.core.comment="从分支名到c2repo的全函数" org.eventb.core.identifier="b2c2repo"/>
+<org.eventb.core.invariant name="U" org.eventb.core.comment="这里NAT&gt;=0..commitId-1,P(Q)&gt;=Repository,部分比全松弛" org.eventb.core.label="inv18" org.eventb.core.predicate="b2c2repo ∈ AllBranch → (ℕ⇸ℙ(Q))"/>
 </org.eventb.core.machineFile>
