@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;org.animb.valuation.valBase">
 <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="f2q∈F ⤖ Q" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="untracked∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="notstaged∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#2" org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="staged∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#3" org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="WDState={untracked,notstaged,staged}" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#4" org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name="," org.eventb.core.label="axm6" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#5" org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name="-" org.eventb.core.label="axm7" org.eventb.core.predicate="noname∈BranchName" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#8" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm8" org.eventb.core.predicate="pq2q∈ℙ(Q) ⤖ Q" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#:" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm2" org.eventb.core.predicate="untracked∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#." org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm3" org.eventb.core.predicate="notstaged∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#2" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm4" org.eventb.core.predicate="staged∈WDState" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#3" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="," org.eventb.core.label="axm5" org.eventb.core.predicate="WDState={untracked,notstaged,staged}" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#4" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="-" org.eventb.core.label="axm6" org.eventb.core.predicate="untracked≠notstaged∧notstaged≠staged∧staged≠untracked" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#5" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="." org.eventb.core.label="axm7" org.eventb.core.predicate="noname∈BranchName" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.axiom#8" org.eventb.core.theorem="false"/>
 <org.eventb.core.scCarrierSet name="BranchName" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#6" org.eventb.core.type="ℙ(BranchName)"/>
 <org.eventb.core.scCarrierSet name="F" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.scCarrierSet name="Q" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(Q)"/>
@@ -14,6 +15,7 @@
 <org.eventb.core.scConstant name="f2q" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#+" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.scConstant name="noname" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#7" org.eventb.core.type="BranchName"/>
 <org.eventb.core.scConstant name="notstaged" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#0" org.eventb.core.type="WDState"/>
+<org.eventb.core.scConstant name="pq2q" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#9" org.eventb.core.type="ℙ(ℙ(Q)×Q)"/>
 <org.eventb.core.scConstant name="staged" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#1" org.eventb.core.type="WDState"/>
 <org.eventb.core.scConstant name="untracked" org.eventb.core.source="/git/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.constant#\/" org.eventb.core.type="WDState"/>
 </org.eventb.core.scContextFile>
