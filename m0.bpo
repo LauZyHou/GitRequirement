@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="314">
+<org.eventb.core.poFile org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="232">
 <org.eventb.core.poIdentifier name="BranchName" org.eventb.core.type="ℙ(BranchName)"/>
 <org.eventb.core.poIdentifier name="F" org.eventb.core.type="ℙ(F)"/>
@@ -36,63 +36,69 @@
 <org.eventb.core.poIdentifier name="f2state" org.eventb.core.type="ℙ(F×WDState)"/>
 <org.eventb.core.poIdentifier name="head" org.eventb.core.type="ℤ"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="309">
+<org.eventb.core.poSequent name="inv21/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="327">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="branch∈dom(b2head)∧b2head∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="322">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(F×WDState))∈(∅ ⦂ ℙ(F)) → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="309">
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="322">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(F×Q))∈(∅ ⦂ ℙ(F)) → Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD4"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="309">
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="322">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="309">
+<org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="322">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×Q))∈1 ‥ 1 − 1 ↠ (∅ ⦂ ℙ(Q))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="309">
+<org.eventb.core.poSequent name="INITIALISATION/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="322">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noname∈{noname}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD9"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="309">
+<org.eventb.core.poSequent name="INITIALISATION/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="322">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{noname ↦ 0}∈{noname} → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD10"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="INITIALISATION/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ran({noname ↦ 0})" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0={noname ↦ 0}(noname)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="INITIALISATION/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(BranchName×ℤ))∈{noname} ∖ {noname} → ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
@@ -100,7 +106,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD12"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="INITIALISATION/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(BranchName×ℙ(ℤ×Q)))∈{noname} ∖ {noname} → (ℕ1 ⇸ Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
@@ -108,7 +114,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="INITIALISATION/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&lt;1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
@@ -116,7 +122,7 @@
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#INITIALISATION\/inv19\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="INITIALISATION/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="INITIALISATION/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectorz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noname∈{noname}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#'"/>
@@ -141,257 +147,290 @@
 <org.eventb.core.poIdentifier name="AllRepo'" org.eventb.core.type="ℙ(ℙ(Q))"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectorz" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectorz" org.eventb.core.poStamp="249"/>
-<org.eventb.core.poSequent name="create_file/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="create_file/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector{"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f2state∪{f ↦ untracked}∈WorkDirectory∪{f} → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\/"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_file\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_file/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="create_file/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector{"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f2oldq{f ↦ f2q(f)}∈WorkDirectory∪{f} → Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f2oldq∪{f ↦ f2q(f)}∈WorkDirectory∪{f} → Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\/"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_file\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD4"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_file/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="create_file/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector{"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f∈dom(f2q)∧f2q∈F ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\/|org.eventb.core.action#+"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\/|org.eventb.core.action#+"/>
 <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector{"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector{" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector{" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="f" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="WorkDirectory'" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.poIdentifier name="f2oldq'" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.poIdentifier name="f2state'" org.eventb.core.type="ℙ(F×WDState)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector{" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector{" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector{" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector{" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f∈F ∖ WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\/|org.eventb.core.guard#("/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\/|org.eventb.core.guard#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="modify_file_staged/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector\|("/>
+<org.eventb.core.poSequent name="delete_file_untracked/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector\|'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f∈dom(f2state)∧f2state∈F ⇸ WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\\|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\\|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector\|'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_file_untracked/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{f} ⩤ f2state∈WorkDirectory ∖ {f} → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\\"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_file_untracked\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_file_untracked/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{f} ⩤ f2oldq∈WorkDirectory ∖ {f} → Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\\"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_file_untracked\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector|" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
+<org.eventb.core.poIdentifier name="f" org.eventb.core.type="F"/>
+<org.eventb.core.poIdentifier name="WorkDirectory'" org.eventb.core.type="ℙ(F)"/>
+<org.eventb.core.poIdentifier name="f2oldq'" org.eventb.core.type="ℙ(F×Q)"/>
+<org.eventb.core.poIdentifier name="f2state'" org.eventb.core.type="ℙ(F×WDState)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirector|'" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector\|" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f∈WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\\|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector|" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector\|'" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f2state(f)=untracked" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#\\|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="modify_file_staged/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector}("/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f_old∈dom(f2state)∧f2state∈F ⇸ WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#0"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#0"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector\|("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector}("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="modify_file_staged/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector\|"/>
+<org.eventb.core.poSequent name="modify_file_staged/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ notstaged}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#modify_file_staged\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="modify_file_staged/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector\|"/>
+<org.eventb.core.poSequent name="modify_file_staged/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="({f_old} ⩤ f2oldq)∪{f_new ↦ f2q(f_old)}∈(WorkDirectory ∖ {f_old})∪{f_new} → Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#modify_file_staged\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD4"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="modify_file_staged/act5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector\|"/>
+<org.eventb.core.poSequent name="modify_file_staged/act5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f_old∈dom(f2q)∧f2q∈F ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.action#\/"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.action#\/"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector\|"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector|" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector}" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="f_old" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="f_new" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="WorkDirectory'" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.poIdentifier name="f2oldq'" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.poIdentifier name="f2state'" org.eventb.core.type="ℙ(F×WDState)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirector|(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector\|" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirector}(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector}" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f_old∈WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector|" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector\|(" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector}" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector}(" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="f2state(f_old)=staged" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#0"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#1"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="modify_file_notstaged/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector}("/>
+<org.eventb.core.poSequent name="modify_file_notstaged/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector~("/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f_old∈dom(f2state)∧f2state∈F ⇸ WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.guard#+"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.guard#+"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector}("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector~("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="modify_file_notstaged/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
+<org.eventb.core.poSequent name="modify_file_notstaged/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="({f_old} ⩤ f2state)∪{f_new ↦ notstaged}∈(WorkDirectory ∖ {f_old})∪{f_new} → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#modify_file_notstaged\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="modify_file_notstaged/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
+<org.eventb.core.poSequent name="modify_file_notstaged/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="({f_old} ⩤ f2oldq)∪{f_new ↦ f2oldq(f_old)}∈(WorkDirectory ∖ {f_old})∪{f_new} → Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#6"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#modify_file_notstaged\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD4"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="modify_file_notstaged/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
+<org.eventb.core.poSequent name="modify_file_notstaged/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f_old∈dom(f2oldq)∧f2oldq∈F ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.action#."/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.action#."/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector}"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector}" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector~" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="f_old" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="f_new" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="WorkDirectory'" org.eventb.core.type="ℙ(F)"/>
 <org.eventb.core.poIdentifier name="f2oldq'" org.eventb.core.type="ℙ(F×Q)"/>
 <org.eventb.core.poIdentifier name="f2state'" org.eventb.core.type="ℙ(F×WDState)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirector}(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector}" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirector~(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector~" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f_old∈WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f_new∈F ∖ WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector}" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector}(" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector~" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector~(" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="f2state(f_old)=notstaged" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.guard#+"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#7|org.eventb.core.guard#\/"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="add_untracked/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector~'"/>
+<org.eventb.core.poSequent name="add_untracked/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos''"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f∈dom(f2state)∧f2state∈F ⇸ WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector~'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos''"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_untracked/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
+<org.eventb.core.poSequent name="add_untracked/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos'"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f2state{f ↦ staged}∈WorkDirectory → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#add_untracked\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_untracked/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
+<org.eventb.core.poSequent name="add_untracked/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos'"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f∈dom(f2q)∧f2q∈F ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.action#-"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.action#-"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirector~"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos'"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirector~" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos'" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="f" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="StageField'" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.poIdentifier name="f2state'" org.eventb.core.type="ℙ(F×WDState)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirector~'" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirector~" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos''" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos'" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f∈WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirector~" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirector~'" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos'" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos''" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f2state(f)=untracked" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#2|org.eventb.core.guard#."/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="add_notstaged/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos''"/>
+<org.eventb.core.poSequent name="add_notstaged/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos('"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f∈dom(f2state)∧f2state∈F ⇸ WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#)"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#)"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos''"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos('"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_notstaged/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos'"/>
+<org.eventb.core.poSequent name="add_notstaged/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f2state{f ↦ staged}∈WorkDirectory → WDState" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#1"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#add_notstaged\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD3"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="add_notstaged/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos'"/>
+<org.eventb.core.poSequent name="add_notstaged/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="f∈dom(f2oldq)∧f2oldq∈F ⇸ Q∧f∈dom(f2q)∧f2q∈F ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.action#*"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.action#*"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos'" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="f" org.eventb.core.type="F"/>
 <org.eventb.core.poIdentifier name="StageField'" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.poIdentifier name="f2state'" org.eventb.core.type="ℙ(F×WDState)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos''" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos'" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos('" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos(" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="f∈WorkDirectory" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos'" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos''" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos('" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f2state(f)=notstaged" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="commit/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="commitId+1∈ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c2repo{commitId ↦ pq2q(StageField)}∈1 ‥ commitId+1 − 1 ↠ Repository∪{pq2q(StageField)}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="314">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head{branch ↦ commitId}∈AllBranch → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD10"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="314">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="commitId∈ran(b2head{branch ↦ commitId})" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSequent name="commit/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="commitId=(b2head{branch ↦ commitId})(branch)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2commitId{branch ↦ commitId}∈AllBranch ∖ {noname} → ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD12"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2c2repo{branch ↦ c2repo}∈AllBranch ∖ {noname} → (ℕ1 ⇸ Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="commitId&lt;commitId+1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#commit\/inv19\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="StageField∈dom(pq2q)∧pq2q∈ℙ(Q) ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.action#)"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.action#)"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="commit/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="313">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSequent name="commit/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="StageField∈dom(pq2q)∧pq2q∈ℙ(Q) ⇸ Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.action#,"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.action#,"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos)" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="commitId'" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="b2commitId'" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
 <org.eventb.core.poIdentifier name="head'" org.eventb.core.type="ℤ"/>
@@ -400,84 +439,84 @@
 <org.eventb.core.poIdentifier name="c2repo'" org.eventb.core.type="ℙ(ℤ×Q)"/>
 <org.eventb.core.poIdentifier name="Repository'" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos(" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos(" org.eventb.core.poStamp="313">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos)" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos)" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="StageField≠(∅ ⦂ ℙ(Q))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.guard#'"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f2state[WorkDirectory]∩{untracked,notstaged}=(∅ ⦂ ℙ(WDState))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="branch∈AllBranch ∖ {noname}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#?|org.eventb.core.guard#-"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="create_branch/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×Q))∈1 ‥ 1 − 1 ↠ (∅ ⦂ ℙ(Q))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈AllBranch∪{b}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD9"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head∪{b ↦ 0}∈AllBranch∪{b} → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD10"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ran(b2head∪{b ↦ 0})" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSequent name="create_branch/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0=(b2head∪{b ↦ 0})(b)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2commitId∪{b ↦ 1}∈(AllBranch∪{b}) ∖ {noname} → ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD12"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2c2repo∪{b ↦ (∅ ⦂ ℙ(ℤ×Q))}∈(AllBranch∪{b}) ∖ {noname} → (ℕ1 ⇸ Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&lt;1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv19\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="create_branch/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos)"/>
+<org.eventb.core.poSequent name="create_branch/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noname∈AllBranch∪{b}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#create_branch\/inv20\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD15"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos)" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos*" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BranchName"/>
 <org.eventb.core.poIdentifier name="commitId'" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="b2commitId'" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
@@ -489,125 +528,125 @@
 <org.eventb.core.poIdentifier name="c2repo'" org.eventb.core.type="ℙ(ℤ×Q)"/>
 <org.eventb.core.poIdentifier name="Repository'" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos)" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos)" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos*" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos*" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈BranchName" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b∉AllBranch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#P|org.eventb.core.guard#4"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="switch_branch_0/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos*,"/>
+<org.eventb.core.poSequent name="switch_branch_0/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)∧b∈dom(b2commitId)∧b2commitId∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#-"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#-"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos*,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos*-"/>
+<org.eventb.core.poSequent name="switch_branch_0/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+-"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2head)∧b2head∈BranchName ⇸ ℤ∧b∈dom(b2commitId)∧b2commitId∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#4"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#4"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos*-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+-"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2commitId(b)∈ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2c2repo(b)∈1 ‥ b2commitId(b) − 1 ↠ ran(b2c2repo(b))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈AllBranch ∖ {branch}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD9"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{branch} ⩤ b2head∈AllBranch ∖ {branch} → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD10"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head(b)∈ran({branch} ⩤ b2head)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head(b)=({branch} ⩤ b2head)(b)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{branch} ⩤ b2commitId∈(AllBranch ∖ {branch}) ∖ {noname} → ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD12"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{branch} ⩤ b2c2repo∈(AllBranch ∖ {branch}) ∖ {noname} → (ℕ1 ⇸ Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head(b)&lt;b2commitId(b)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv19\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noname∈AllBranch ∖ {branch}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_0\/inv20\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD15"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2head)∧b2head∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#\/"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#\/"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2commitId)∧b2commitId∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#0"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#0"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/act4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/act4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#1"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/act5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/act5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#2"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#2"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_0/act6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSequent name="switch_branch_0/act6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)∧b∈dom(b2head)∧b2head∈BranchName ⇸ ℤ∧b2head(b)∈dom(b2c2repo(b))∧b2c2repo(b)∈ℤ ⇸ Q∧b2c2repo(b)(b2head(b))∈dom(pq2q∼)∧pq2q∼∈Q ⇸ ℙ(Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#3"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.action#3"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos*" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos+" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BranchName"/>
 <org.eventb.core.poIdentifier name="commitId'" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="b2commitId'" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
@@ -620,7 +659,7 @@
 <org.eventb.core.poIdentifier name="StageField'" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.poIdentifier name="Repository'" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos*," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos*" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos+," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos+" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="head=0" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b∈AllBranch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#)"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b≠branch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#*"/>
@@ -628,101 +667,101 @@
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#9"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="f2state[WorkDirectory]∩{notstaged}=(∅ ⦂ ℙ(WDState))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos*-" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos*," org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos+-" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+," org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="dom(b2c2repo(b))=1 ‥ b2commitId(b) − 1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#-"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos*" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos*-" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos+" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+-" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="b2head(b)∈1 ‥ b2commitId(b) − 1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Y|org.eventb.core.guard#4"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="switch_branch_1/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+,"/>
+<org.eventb.core.poSequent name="switch_branch_1/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="head∈dom(c2repo)∧c2repo∈ℤ ⇸ Q∧c2repo(head)∈dom(pq2q∼)∧pq2q∼∈Q ⇸ ℙ(Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#+"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#+"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+-"/>
+<org.eventb.core.poSequent name="switch_branch_1/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,-"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)∧b∈dom(b2commitId)∧b2commitId∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#2"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#2"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+-"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,-"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+."/>
+<org.eventb.core.poSequent name="switch_branch_1/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,."/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2head)∧b2head∈BranchName ⇸ ℤ∧b∈dom(b2commitId)∧b2commitId∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#4"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#4"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,."/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2commitId(b)∈ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#="/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_1\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD5"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2c2repo(b)∈1 ‥ b2commitId(b) − 1 ↠ ran(b2c2repo(b))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#&gt;"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_1\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD6"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈AllBranch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_1\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD9"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD9"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head(b)∈ran(b2head)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSequent name="switch_branch_1/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head(b)=b2head(b)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_1\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head(b)&lt;b2commitId(b)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#switch_branch_1\/inv19\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2head)∧b2head∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#-"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#-"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/act3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2commitId)∧b2commitId∈BranchName ⇸ ℤ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#."/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#."/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/act5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/act5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#1"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#1"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/act4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/act4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(b2c2repo)∧b2c2repo∈BranchName ⇸ ℙ(ℤ × Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#\/"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#\/"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="switch_branch_1/act6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSequent name="switch_branch_1/act6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="head∈dom(c2repo)∧c2repo∈ℤ ⇸ Q∧c2repo(head)∈dom(pq2q∼)∧pq2q∼∈Q ⇸ ℙ(Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#3"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.action#3"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos+"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos+" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BranchName"/>
 <org.eventb.core.poIdentifier name="commitId'" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="head'" org.eventb.core.type="ℤ"/>
@@ -731,7 +770,7 @@
 <org.eventb.core.poIdentifier name="StageField'" org.eventb.core.type="ℙ(Q)"/>
 <org.eventb.core.poIdentifier name="Repository'" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos+," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos+" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos,," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos," org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="head∈1 ‥ commitId − 1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#6"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b∈AllBranch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b≠branch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#)"/>
@@ -739,55 +778,114 @@
 <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#7"/>
 <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="f2state[WorkDirectory]∩{notstaged}=(∅ ⦂ ℙ(WDState))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos+-" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+," org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos,-" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,," org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="StageField ∖ pq2q∼(c2repo(head))=(∅ ⦂ ℙ(Q))" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#+"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos+." org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+-" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTHYPWorkDirectos,." org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,-" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="dom(b2c2repo(b))=1 ‥ b2commitId(b) − 1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#2"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos+" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos+." org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTHYPWorkDirectos,." org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="b2head(b)&lt;b2commitId(b)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#Q|org.eventb.core.guard#4"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="move_head/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
+<org.eventb.core.poSequent name="move_head/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos-"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b2head{branch ↦ new_head}∈AllBranch → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#W"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#move_head\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
-<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD10"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD10"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="move_head/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
-<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="new_head∈ran(b2head{branch ↦ new_head})" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSequent name="move_head/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="new_head=(b2head{branch ↦ new_head})(branch)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#W"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#move_head\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="move_head/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
+<org.eventb.core.poSequent name="move_head/inv19/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos-"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="new_head&lt;commitId" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#W"/>
 <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>
 <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#move_head\/inv19\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
 <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="move_head/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="312">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
+<org.eventb.core.poSequent name="move_head/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos-"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="new_head∈dom(c2repo)∧c2repo∈ℤ ⇸ Q∧c2repo(new_head)∈dom(pq2q∼)∧pq2q∼∈Q ⇸ ℙ(Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#W|org.eventb.core.action#*"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#W|org.eventb.core.action#*"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos-"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos-" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
 <org.eventb.core.poIdentifier name="head'" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="new_head" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="b2head'" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
 <org.eventb.core.poIdentifier name="StageField'" org.eventb.core.type="ℙ(Q)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos," org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos," org.eventb.core.poStamp="312">
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos-" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos-" org.eventb.core.poStamp="338">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="new_head∈1 ‥ commitId − 1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#W|org.eventb.core.guard#("/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="312">
+<org.eventb.core.poSequent name="delete_branch/inv13/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="branch∈AllBranch ∖ {b}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_branch\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD9"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_branch/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{b} ⩤ b2head∈AllBranch ∖ {b} → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_branch\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;|org.eventb.core.poPredicate#PRD10"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_branch/inv21/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="head=({b} ⩤ b2head)(branch)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_branch\/inv21\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD11"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_branch/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{b} ⩤ b2commitId∈(AllBranch ∖ {b}) ∖ {noname} → ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_branch\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD12"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_branch/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{b} ⩤ b2c2repo∈(AllBranch ∖ {b}) ∖ {noname} → (ℕ1 ⇸ Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_branch\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="delete_branch/inv20/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTALLHYPWorkDirectos."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="noname∈AllBranch ∖ {b}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#X"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poSequent#delete_branch\/inv20\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD15"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTWorkDirectos." org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="338">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="BranchName"/>
+<org.eventb.core.poIdentifier name="b2commitId'" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+<org.eventb.core.poIdentifier name="AllBranch'" org.eventb.core.type="ℙ(BranchName)"/>
+<org.eventb.core.poIdentifier name="b2c2repo'" org.eventb.core.type="ℙ(BranchName×ℙ(ℤ×Q))"/>
+<org.eventb.core.poIdentifier name="b2head'" org.eventb.core.type="ℙ(BranchName×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPWorkDirectos." org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#EVTIDENTWorkDirectos." org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈AllBranch ∖ {noname,branch}" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#[|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="branch≠noname" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#[|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPc;" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="327">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="WorkDirectory⊆F" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#*"/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="StageField⊆Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#,"/>
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Repository⊆Q" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#."/>
@@ -799,7 +897,9 @@
 <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="AllBranch⊆BranchName" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#K"/>
 <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="branch∈AllBranch" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#L"/>
 <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="b2head∈AllBranch → ℕ" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#O"/>
-<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="head∈ran(b2head)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/git/m0.bpo|org.eventb.core.poFile#m0|org.eventb.core.poPredicateSet#HYPc;" org.eventb.core.poStamp="338">
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="head=b2head(branch)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#Z"/>
 <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="b2commitId∈AllBranch ∖ {noname} → ℕ1" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#S"/>
 <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="b2c2repo∈AllBranch ∖ {noname} → (ℕ1 ⇸ Q)" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#U"/>
 <org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="head&lt;commitId" org.eventb.core.source="/git/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#V"/>

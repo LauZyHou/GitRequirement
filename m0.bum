@@ -28,11 +28,18 @@
 <org.eventb.core.guard name="(" org.eventb.core.comment="文件f原不属于工作区" org.eventb.core.label="grd1" org.eventb.core.predicate="f ∈ F ∖ WorkDirectory"/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="WorkDirectory ≔ WorkDirectory ∪ {f}" org.eventb.core.comment="加入到工作区" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="*" org.eventb.core.assignment="f2state ≔ f2state ∪ {f ↦ untracked}" org.eventb.core.comment="新添加的文件是未跟踪的" org.eventb.core.label="act2"/>
-<org.eventb.core.action name="+" org.eventb.core.assignment="f2oldq(f) ≔ f2q(f)" org.eventb.core.comment="维护到旧版本快照的映射" org.eventb.core.label="act3"/>
-<org.eventb.core.guard name="," org.eventb.core.comment="表示已经创建分支" org.eventb.core.label="grd2" org.eventb.core.predicate="branch ≠ noname"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="f2oldq ≔ f2oldq ∪ {f ↦ f2q(f)}" org.eventb.core.comment="维护到旧版本快照的映射" org.eventb.core.label="act3"/>
 </org.eventb.core.event>
 <org.eventb.core.variable name="0" org.eventb.core.comment="文件-&gt;未跟踪/未暂存/已暂存 的映射" org.eventb.core.identifier="f2state"/>
 <org.eventb.core.invariant name="1" org.eventb.core.comment="工作区文件的状态，是一个全函数" org.eventb.core.label="inv4" org.eventb.core.predicate="f2state ∈ WorkDirectory → WDState"/>
+<org.eventb.core.event name="\" org.eventb.core.comment="删除未跟踪的文件" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="delete_file_untracked">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="f ∈ WorkDirectory"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="f2state(f) = untracked"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="WorkDirectory ≔ WorkDirectory ∖ {f}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="f2state ≔ {f} ⩤ f2state" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="f2oldq ≔ {f} ⩤ f2oldq" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
 <org.eventb.core.event name="3" org.eventb.core.comment="在工作区修改文件(该文件已暂存)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="modify_file_staged">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="f_old"/>
 <org.eventb.core.parameter name="(" org.eventb.core.identifier="f_new"/>
@@ -152,7 +159,7 @@
 <org.eventb.core.guard name="4" org.eventb.core.comment="在切换到新分支还是满足head比最大cid小，以保持inv19" org.eventb.core.label="grd6" org.eventb.core.predicate="b2head(b) &lt; b2commitId(b)"/>
 </org.eventb.core.event>
 <org.eventb.core.variable name="R" org.eventb.core.comment="从分支名到commitId的全函数" org.eventb.core.identifier="b2commitId"/>
-<org.eventb.core.invariant name="Z" org.eventb.core.label="inv21" org.eventb.core.predicate="head ∈ ran(b2head)"/>
+<org.eventb.core.invariant name="Z" org.eventb.core.label="inv21" org.eventb.core.predicate="head = b2head(branch)"/>
 <org.eventb.core.invariant name="S" org.eventb.core.label="inv17" org.eventb.core.predicate="b2commitId ∈ (AllBranch ∖ {noname}) → ℕ1"/>
 <org.eventb.core.variable name="T" org.eventb.core.comment="从分支名到c2repo的全函数" org.eventb.core.identifier="b2c2repo"/>
 <org.eventb.core.invariant name="U" org.eventb.core.comment="这里NAT1&gt;=1..commitId-1,Q&gt;=Repository,部分比全松弛" org.eventb.core.label="inv18" org.eventb.core.predicate="b2c2repo ∈ (AllBranch ∖ {noname}) → (ℕ1⇸Q)"/>
@@ -165,4 +172,13 @@
 <org.eventb.core.action name="+" org.eventb.core.assignment="b2head ≔ b2head  {branch ↦ new_head}" org.eventb.core.label="act3"/>
 </org.eventb.core.event>
 <org.eventb.core.invariant name="X" org.eventb.core.comment="在任何时候特殊的noname都记录在AllBranch里" org.eventb.core.label="inv20" org.eventb.core.predicate="noname ∈ AllBranch"/>
+<org.eventb.core.event name="[" org.eventb.core.comment="删除非自己的某个分支" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="delete_branch">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="b"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ AllBranch ∖ {noname,branch}"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="AllBranch ≔ AllBranch ∖ {b}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="branch ≠ noname"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="b2head ≔ {b} ⩤ b2head" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="b2c2repo ≔ {b} ⩤ b2c2repo" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="b2commitId ≔ {b} ⩤ b2commitId" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
 </org.eventb.core.machineFile>
